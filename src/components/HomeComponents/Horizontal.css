@@ -1,0 +1,11 @@
+.HoverOver {
+  transform: scale(1);
+  transition: transform 1.3s ease-in-out;
+}
+.HoverOver:hover {
+  transform: scale(1.1);
+}
+
+.scrollContainer {
+  height: 300px;
+}

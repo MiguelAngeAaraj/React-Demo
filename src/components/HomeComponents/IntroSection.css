@@ -1,0 +1,27 @@
+.BgContainer {
+  position: absolute;
+  text-transform: uppercase;
+  z-index: -1;
+  font-size: 90px;
+  letter-spacing: 40px;
+  bottom: -30px;
+  left: -100%;
+
+  display: block;
+  color: #ff2625;
+  user-select: none;
+  opacity: 0.45;
+  font-weight: bold;
+}
+@media all and (max-width: 1199px) {
+  .BgContainer {
+    left: -100%;
+    bottom: -17px;
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 899px) {
+  .BgContainer {
+    transform: scale(0);
+  }
+}

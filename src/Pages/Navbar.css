@@ -1,0 +1,20 @@
+.LinkDesign {
+  text-decoration: none;
+  color: rgb(58, 18, 18);
+  position: relative;
+}
+.LinkDesign::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 2px;
+  opacity: 0;
+  transform: translateY(20px);
+  background-color: rgb(255, 38, 37);
+  transition: opacity 0.4s ease-out, transform 0.5s ease-in;
+}
+.LinkDesign:hover::before {
+  transform: translateY(0px);
+  opacity: 1;
+}

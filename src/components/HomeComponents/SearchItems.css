@@ -1,0 +1,62 @@
+.InputField {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background: transparent;
+  letter-spacing: 3px;
+  color: #000;
+}
+
+.LabelInputFloat {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  font-size: 19px;
+  bottom: 10px;
+  top: 0;
+  letter-spacing: 2px;
+  transition: all 0.5s ease-in-out;
+}
+.InputField::placeholder {
+  visibility: hidden;
+}
+.InputField:focus + .LabelInputFloat,
+.InputField:not(:placeholder-shown) + .LabelInputFloat {
+  top: -20px;
+  font-size: 15px;
+  color: #ff2625;
+}
+
+.InputField:focus,
+.InputField:not(:placeholder-shown) {
+  caret-color: #ff2625;
+}
+.BorderSpan {
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 0px;
+  background-color: rgba(255, 38, 37, 0.6);
+  transition: width 1.2s ease-in-out;
+}
+.InputField:focus ~ .BorderSpan,
+.InputField:not(:placeholder-shown) ~ .BorderSpan {
+  width: 100%;
+}
+
+.ListItems::-webkit-scrollbar {
+  display: none;
+}
+.ListItem {
+  font-size: 20px;
+
+  color: rgba(0, 0, 0, 1);
+}
+.ListItemReplace {
+  color: rgba(0, 0, 0, 0.67);
+
+  font-size: 20px;
+}
