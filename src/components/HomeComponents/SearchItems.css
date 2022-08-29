@@ -22,6 +22,9 @@
 .InputField::placeholder {
   visibility: hidden;
 }
+.InputField::-moz-placeholder {
+  color: transparent !important;
+}
 .InputField:focus + .LabelInputFloat,
 .InputField:not(:placeholder-shown) + .LabelInputFloat {
   top: -20px;
